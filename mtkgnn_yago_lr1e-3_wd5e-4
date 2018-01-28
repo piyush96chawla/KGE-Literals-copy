@@ -1,0 +1,7 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "experiments/yago3-10/run_multitask_yago.py", line 4, in <module>
+    from kga.models.baselines_literals import *
+  File "./kga/models/baselines_literals.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

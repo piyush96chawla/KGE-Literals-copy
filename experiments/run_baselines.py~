@@ -98,7 +98,7 @@ models = {
     'rescal': RESCAL(n_e=n_e, n_r=n_r, k=args.k, lam=lam, gpu=args.use_gpu),
     'distmult': DistMult(n_e=n_e, n_r=n_r, k=args.k, lam=lam, gpu=args.use_gpu),
     'ermlp': ERMLP(n_e=n_e, n_r=n_r, k=args.k, h_dim=args.mlp_h, p=args.mlp_dropout_p, lam=lam, gpu=args.use_gpu),
-    'transe': TransE(n_e=n_e, n_r=n_r, k=args.k, gamma = args.transe_gamma, gpu=args.use_gpu)
+    'transe': TransE(n_e=n_e, n_r=n_r, k=args.k, gamma = args.transe_gamma,lam=lam, gpu=args.use_gpu)
 }
 
 model = models[args.model]
